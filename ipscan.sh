@@ -4,8 +4,6 @@ echo -n "input network segment:"
 read ipsegment
 echo -n "input test website:"
 read wed
-ipsegment="121.194.86"
-wed="gw.cugb.edu.cn"
 if [[ $ipsegment =~ ^([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5])$ ]]
 then
     for((count=1;count<=255;count++))
